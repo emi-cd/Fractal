@@ -33,7 +33,7 @@ void dig(){
     for(int i = 0; i < SIZE/_standard ; i++) {
       for(int j = 0; j < SIZE/_standard ; j++){
         // Conditions
-        if((i%2 == 1 && j%2 == 0) || (i%2 == 1 && j%2 == 0)){
+        if((i%2 == 1 && j%2 == 0) || (i%2 == 0 && j%2 == 1)){
           fill(255);
           rect(i*_standard+10, j*_standard+10, _standard, _standard);
         }
